@@ -1,0 +1,17 @@
+/String reversal in two ways
+public class MyClass {
+    public static void main(String args[]) {
+      String given="Hello Welcome";
+      String reversed = " ";
+      int len = given.length();
+      for(int i=0;i<len;i++){
+          
+          reversed = given.charAt(i)+reversed;
+          
+      }
+      System.out.println("Reversed String without string builder/buffer is " + reversed);
+      StringBuilder sb = new StringBuilder();
+      sb.append(given);
+      System.out.println("Reversed String with string builder/buffer is " + sb.reverse());
+    }
+}
